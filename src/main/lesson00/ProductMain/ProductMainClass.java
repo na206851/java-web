@@ -9,10 +9,10 @@ public class ProductMainClass {
     public int quantityInStock;    //количество на складе
     public int productPrice;       //цена продукта
     public int sizeDiscount;       //размер скидки в рублях
-    public int IDClient;       //индивидуальный номер клиента
+    public String IDClient;       //индивидуальный номер клиента
     public String emailClient;     //электронная почта клиента
-    public int phoneNumberClient;      //телефонный номер клиента
-    public Date dateDelivery;
+    public String phoneNumberClient;      //телефонный номер клиента
+//    public Date dateDelivery;       //дата доставки клиенту
 
     public ProductMainClass() {
     }
