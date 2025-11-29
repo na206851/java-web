@@ -10,6 +10,12 @@ public class validateSaleDiscount implements validate {
         if (product.sizeDiscount < 0) {
             return false;
         }
-        
+        int totalDiscount = product.sizeDiscount * product.requiredQuantity;
+        int totalSum = product.productPrice * product.requiredQuantity;
+        int maxTotalDiscount = totalSum / 5;
+        if (maxTotalDiscount < totalDiscount) {
+            return true;
+        }
+        return false;
     }
 }
