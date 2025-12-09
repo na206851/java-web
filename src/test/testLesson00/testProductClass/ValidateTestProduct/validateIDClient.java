@@ -21,12 +21,4 @@ public class validateIDClient implements validate {
 
         return pattern.matcher(product.IDClient).matches();
     }
-
-    public static void main(String[] args) {
-        validateIDClient test = new validateIDClient();
-        ProductMainClass client = new ProductMainClass("test", 10, 15, 2, 1,
-                "A", "1@gmail.com", "+79834321221");
-        System.out.println(test.Check(client));
-    }
-
 }
