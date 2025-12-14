@@ -15,4 +15,9 @@ public class validateEmailClient implements validate {
         }
         return pattern.matcher(product.emailClient).matches();
     }
+
+    @Override
+    public String getError() {
+        return "ошибка в методе EmailClient";
+    }
 }

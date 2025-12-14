@@ -21,4 +21,9 @@ public class validateIDClient implements validate {
 
         return pattern.matcher(product.IDClient).matches();
     }
+
+    @Override
+    public String getError() {
+        return "ошибка в методе IDClient";
+    }
 }

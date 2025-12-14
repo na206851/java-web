@@ -15,4 +15,9 @@ public class validatePhoneNumberClient implements validate {
         }
         return patternNumberClient.matcher(product.phoneNumberClient).matches();
     }
+
+    @Override
+    public String getError() {
+        return "ошибка в методе PhoneNumberClient";
+    }
 }

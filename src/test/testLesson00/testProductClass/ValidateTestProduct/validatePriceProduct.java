@@ -8,4 +8,9 @@ public class validatePriceProduct implements validate {
     public boolean Check(ProductMainClass product) {
         return product.productPrice > 0;
     }
+
+    @Override
+    public String getError() {
+        return "error in method PriceProduct";
+    }
 }

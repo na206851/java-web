@@ -12,4 +12,9 @@ public class validateRequiredQuantity implements validate {
         }
         return product.requiredQuantity <= product.quantityInStock;
     }
+
+    @Override
+    public String getError() {
+        return "error in method RequiredQuantity";
+    }
 }

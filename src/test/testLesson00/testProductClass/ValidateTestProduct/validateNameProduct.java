@@ -7,6 +7,11 @@ public class validateNameProduct implements validate {
     
     @Override
     public boolean Check(ProductMainClass product) {
-        return product != null && product.toString().trim().isEmpty();
+        return product.getNameProduct() != null && !product.getNameProduct().trim().isEmpty();
+    }
+
+    @Override
+    public String getError() {
+        return "error in method NameProduct";
     }
 }

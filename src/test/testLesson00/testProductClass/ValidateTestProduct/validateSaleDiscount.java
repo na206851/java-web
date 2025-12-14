@@ -18,4 +18,9 @@ public class validateSaleDiscount implements validate {
         }
         return false;
     }
+
+    @Override
+    public String getError() {
+        return "ошибка в методе SaleDiscount";
+    }
 }
