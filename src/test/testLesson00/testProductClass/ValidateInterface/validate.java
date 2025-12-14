@@ -4,4 +4,6 @@ import lesson00.ProductMain.ProductMainClass;
 
 public interface validate {
     boolean Check(ProductMainClass product);
+
+    String getError();
 }

@@ -14,7 +14,7 @@ public class ProductMainClass {
 
     public ProductMainClass(String nameProduct, int requiredQuantity, int quantityInStock,
                             int productPrice, int sizeDiscount, String IDClient, String emailClient, String phoneNumberClient, String dateDelivery) {
-        this.nameProduct = nameProduct; //название продукта
+        this.nameProduct = nameProduct;             //название продукта
         this.requiredQuantity = requiredQuantity;   //требуемое количество
         this.quantityInStock = quantityInStock;     //количество на складе
         this.productPrice = productPrice;           //цена товара
@@ -98,19 +98,5 @@ public class ProductMainClass {
     }
 
     public ProductMainClass() {
-    }
-
-    public ProductMainClass(String nameProduct, int requiredQuantity, int quantityInStock,
-                            int productPrice, int sizeDiscount, int IDClient, String emailClient, int phoneNumberClient, Date dateDelivery) {
-        this.nameProduct = nameProduct;
-        this.requiredQuantity = requiredQuantity;
-        this.quantityInStock = quantityInStock;
-        this.productPrice = productPrice;
-        this.sizeDiscount = sizeDiscount;
-        this.IDClient = IDClient;
-        this.emailClient = emailClient;
-        this.phoneNumberClient = phoneNumberClient;
-        this.dateDelivery = dateDelivery;
-
     }
 }
